@@ -29,8 +29,8 @@ jobs:
         run: npm install --global @turbowarp/sbdl
 
       - id: download 
-        name: Download
-        run: wget 
+        name: Download SB3
+        run: sbdl  
         
   push:
     needs: fetch
